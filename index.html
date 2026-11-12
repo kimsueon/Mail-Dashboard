@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Search Console(brownpenguin26 계정)에서 받은 태그로 아래 줄 전체를 교체하세요 -->
+<meta name="google-site-verification" content="dGeAT9oFQ7Ks13RtSmfJEOZUSqpMUsPnhOBQ-pC_yA8" />
+<title>Mail Dashboard</title>
+<meta name="description" content="Mail Dashboard — 개인용 메일·할 일·일정 확인 대시보드">
+<style>
+  :root { --text: #1d1f24; --muted: #5f6673; --line: #e3e5ea; --bg: #ffffff; --accent: #2f6fe4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --text: #e8eaf0; --muted: #9aa1b1; --line: #2a2f3a; --bg: #12141a; --accent: #6ea8fe; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.7 -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 32px; margin: 0 0 8px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--line); }
+  .lead { font-size: 18px; }
+  .muted, .en { color: var(--muted); }
+  .en { font-size: 15px; }
+  a { color: var(--accent); }
+  ul { padding-left: 22px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 14px; }
+  footer a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Mail Dashboard</h1>
+  <p class="lead">Mail Dashboard는 새 메일, 할 일, 오늘 일정을 한 화면에 모아 보여주는 <strong>개인용 대시보드</strong>입니다.</p>
+  <p>개발자 본인이 집에 있는 개인 서버와 벽걸이 화면에서 사용하기 위해 만들었으며, 일반에 배포하거나 판매하지 않습니다.</p>
+
+  <h2>무엇을 하나요?</h2>
+  <ul>
+    <li><strong>메일</strong>: Gmail 받은편지함의 안 읽은 메일을 보여주고, 본인의 다른 메일 계정으로 온 메일을 Gmail로 모아 줍니다.</li>
+    <li><strong>할 일</strong>: Google Tasks의 할 일 목록을 보여주고 완료 표시를 할 수 있습니다.</li>
+    <li><strong>일정</strong>: Google Calendar의 일정을 읽기 전용으로 보여줍니다.</li>
+  </ul>
+
+  <h2>Google 계정 연결과 개인정보</h2>
+  <p>위 기능을 위해 Google 계정 로그인(OAuth)으로 Gmail, Google Tasks, Google Calendar에 접근합니다.
+  데이터는 대시보드 화면 표시 목적으로만 사용하고, 인증 정보는 본인 소유의 개인 서버에만 저장하며, 제3자에게 제공하지 않습니다.
+  자세한 내용은 <a href="privacy.html#privacy">개인정보처리방침</a>을 확인해 주세요.</p>
+
+  <h2 lang="en">About (English)</h2>
+  <div class="en" lang="en">
+    <p><strong>Mail Dashboard</strong> is a personal dashboard that shows unread Gmail messages, Google Tasks and Google Calendar events on a single screen.
+    It is built for and used only by its developer, on a personal home server and wall display. It is not distributed or sold.</p>
+    <p>It signs in with Google (OAuth) to read Gmail, Tasks and Calendar data, uses that data only to display it on the dashboard, and never shares it with third parties.
+    See the <a href="privacy.html#english">Privacy Policy</a>.</p>
+  </div>
+
+  <footer>
+    <a href="privacy.html#privacy">개인정보처리방침 (Privacy Policy)</a>
+    <a href="privacy.html#terms">이용약관 (Terms of Service)</a>
+    <span class="muted">문의: <a href="mailto:kimsueon6@gmail.com">kimsueon6@gmail.com</a></span>
+  </footer>
+</main>
+</body>
+</html>
